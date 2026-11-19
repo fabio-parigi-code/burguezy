@@ -1,0 +1,18 @@
+BURGER ZY - SITE INICIAL
+
+Arquivos:
+- index.html: conteúdo da página e JavaScript simples.
+- style.css: estilos da página.
+- imagens/logo.png: logomarca fornecida.
+- imagens/banner-burger-zy.png: banner estático.
+
+ANTES DE PUBLICAR:
+1. Substitua os oito espaços de produtos por fotos e nomes reais.
+2. Substitua os arquivos produto-01.svg até produto-08.svg pelas fotos reais (ajuste também os nomes dos arquivos no HTML para .jpg ou .png, se necessário).
+3. Atualize as descrições nos atributos data-descricao.
+4. Troque 55DDDNUMERO pelo número real no link do WhatsApp.
+5. Substitua ENDERECO_AQUI pelo endereço real na URL do mapa.
+6. Atualize endereço e telefone no rodapé.
+
+As imagens dos oito produtos, o endereço e o telefone ainda não foram fornecidos.
+O site usa HTML, CSS e JavaScript puro, sem frameworks.

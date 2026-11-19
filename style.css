@@ -1,0 +1,245 @@
+/* CONFIGURAÇÕES GERAIS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #111111;
+    background-color: #FFFFFF;
+    line-height: 1.5;
+}
+
+h1, h2 {
+    margin-bottom: 10px;
+}
+
+
+/* CABEÇALHO */
+.cabecalho {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 4px solid #FFC928;
+}
+
+.cabecalho img {
+    width: 250px;
+    max-width: 90%;
+    height: 85px;
+    object-fit: cover;
+}
+
+
+/* BANNER ESTÁTICO */
+.banner img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+/* CARDÁPIO */
+.cardapio {
+    max-width: 1000px;
+    margin: 35px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.cardapio h1 {
+    font-size: 32px;
+}
+
+.cardapio > p {
+    margin-bottom: 20px;
+    color: #555555;
+}
+
+
+/* GALERIA COM OITO PRODUTOS */
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.produto {
+    padding: 5px;
+    border: 2px solid #FFC928;
+    border-radius: 7px;
+    background-color: #FFFFFF;
+    color: #111111;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.produto img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+}
+
+.nome-produto {
+    display: block;
+    padding: 7px;
+    font-weight: bold;
+}
+
+.produto:hover {
+    border-color: #111111;
+}
+
+
+/* APRESENTAÇÃO DA HAMBURGUERIA */
+.sobre {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px 20px;
+    border-top: 3px solid #FFC928;
+    text-align: center;
+}
+
+.sobre h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.sobre p {
+    color: #555555;
+    font-size: 16px;
+}
+
+
+/* CONTATO E WHATSAPP */
+.contato {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 35px 20px;
+    background-color: #111111;
+    color: #FFFFFF;
+    border-top: 4px solid #FFC928;
+    border-bottom: 4px solid #FFC928;
+    text-align: center;
+}
+
+.botao-whatsapp {
+    padding: 13px 25px;
+    border-radius: 25px;
+    background-color: #FFC928;
+    color: #111111;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.botao-whatsapp:hover {
+    background-color: #E5AD00;
+}
+
+
+/* LOCALIZAÇÃO */
+.localizacao {
+    max-width: 1000px;
+    margin: 35px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.localizacao iframe {
+    width: 100%;
+    height: 300px;
+    margin-top: 15px;
+    border: 0;
+    border-radius: 7px;
+}
+
+
+/* RODAPÉ */
+.rodape {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 30px 20px;
+    background-color: #111111;
+    color: #FFFFFF;
+    border-top: 4px solid #FFC928;
+    text-align: center;
+}
+
+.rodape img {
+    width: 180px;
+    height: 60px;
+    object-fit: cover;
+}
+
+.direitos {
+    font-size: 13px;
+}
+
+
+/* JANELA DE INFORMAÇÕES DO PRODUTO */
+#janela-produto {
+    width: 90%;
+    max-width: 500px;
+    margin: auto;
+    padding: 25px;
+    border: none;
+    border-radius: 8px;
+}
+
+#janela-produto::backdrop {
+    background-color: #000000BB;
+}
+
+#imagem-ampliada {
+    display: block;
+    width: 100%;
+    max-height: 55vh;
+    object-fit: contain;
+    margin: 15px auto;
+}
+
+#fechar {
+    float: right;
+    padding: 5px 10px;
+    border: none;
+    background-color: #FFC928;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+/* AJUSTES PARA TABLETS */
+@media (max-width: 800px) {
+    .galeria {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* AJUSTES PARA CELULARES */
+@media (max-width: 500px) {
+    .galeria {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .cardapio h1 {
+        font-size: 27px;
+    }
+
+    .contato {
+        flex-direction: column;
+    }
+
+    .rodape {
+        flex-direction: column;
+    }
+}

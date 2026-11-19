@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <!-- Configurações básicas da página -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BURGER ZY | Hamburgueria Delivery</title>
+
+    <!-- Arquivo de estilos -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- CABEÇALHO COM A LOGOMARCA -->
+    <header class="cabecalho">
+        <img src="imagens/logo.png" alt="BURGER ZY - Hamburgueria Delivery">
+    </header>
+
+
+    <!-- BANNER PRINCIPAL: IMAGEM ESTÁTICA, SEM LINK OU BOTÃO -->
+    <section class="banner">
+        <img src="imagens/banner-burger-zy.png"
+             alt="BURGER ZY - Sabor artesanal em cada mordida">
+    </section>
+
+
+    <main>
+
+        <!-- CARDÁPIO COM OITO ESPAÇOS PARA OS PRODUTOS -->
+        <section class="cardapio" id="cardapio">
+
+            <h1>Nosso Cardápio</h1>
+            <p>Conheça algumas das nossas opções.</p>
+
+            <div class="galeria">
+
+                <!-- Produto 1: substituir o espaço pela foto e nome reais -->
+                <button class="produto" type="button" data-nome="Produto 01"
+                        data-descricao="Descrição do produto a ser fornecida pela hamburgueria.">
+                    <img src="imagens/produto-01.svg" alt="Fotografia do produto 01">
+                    <span class="nome-produto">Produto 01</span>
+                </button>
+
+                <!-- Produto 2 -->
+                <button class="produto" type="button" data-nome="Produto 02"
+                        data-descricao="Descrição do produto a ser fornecida pela hamburgueria.">
+                    <img src="imagens/produto-02.svg" alt="Fotografia do produto 02">
+                    <span class="nome-produto">Produto 02</span>
+                </button>
+
+                <!-- Produto 3 -->
+                <button class="produto" type="button" data-nome="Produto 03"
+                        data-descricao="Descrição do produto a ser fornecida pela hamburgueria.">
+                    <img src="imagens/produto-03.svg" alt="Fotografia do produto 03">
+                    <span class="nome-produto">Produto 03</span>
+                </button>
+
+                <!-- Produto 4 -->
+                <button class="produto" type="button" data-nome="Produto 04"
+                        data-descricao="Descrição do produto a ser fornecida pela hamburgueria.">
+                    <img src="imagens/produto-04.svg" alt="Fotografia do produto 04">
+                    <span class="nome-produto">Produto 04</span>
+                </button>
+
+                <!-- Produto 5 -->
+                <button class="produto" type="button" data-nome="Produto 05"
+                        data-descricao="Descrição do produto a ser fornecida pela hamburgueria.">
+                    <img src="imagens/produto-05.svg" alt="Fotografia do produto 05">
+                    <span class="nome-produto">Produto 05</span>
+                </button>
+
+                <!-- Produto 6 -->
+                <button class="produto" type="button" data-nome="Produto 06"
+                        data-descricao="Descrição do produto a ser fornecida pela hamburgueria.">
+                    <img src="imagens/produto-06.svg" alt="Fotografia do produto 06">
+                    <span class="nome-produto">Produto 06</span>
+                </button>
+
+                <!-- Produto 7 -->
+                <button class="produto" type="button" data-nome="Produto 07"
+                        data-descricao="Descrição do produto a ser fornecida pela hamburgueria.">
+                    <img src="imagens/produto-07.svg" alt="Fotografia do produto 07">
+                    <span class="nome-produto">Produto 07</span>
+                </button>
+
+                <!-- Produto 8 -->
+                <button class="produto" type="button" data-nome="Produto 08"
+                        data-descricao="Descrição do produto a ser fornecida pela hamburgueria.">
+                    <img src="imagens/produto-08.svg" alt="Fotografia do produto 08">
+                    <span class="nome-produto">Produto 08</span>
+                </button>
+
+            </div>
+        </section>
+
+
+        <!-- APRESENTAÇÃO DA HAMBURGUERIA -->
+        <section class="sobre">
+            <h2>Conheça a BURGER ZY</h2>
+            <p>
+                A BURGER ZY é uma hamburgueria delivery.
+                Conheça as opções do nosso cardápio, escolha seu
+                hambúrguer favorito e entre em contato para fazer seu pedido.
+            </p>
+        </section>
+
+
+        <!-- CONTATO PELO WHATSAPP -->
+        <section class="contato">
+            <div>
+                <h2>Gostou? Faça seu pedido!</h2>
+                <p>Entre em contato conosco pelo WhatsApp.</p>
+            </div>
+
+            <!-- Trocar 55DDDNUMERO pelo código do país, DDD e número comercial -->
+            <a href="https://wa.me/55DDDNUMERO"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="botao-whatsapp">
+                Fale conosco no WhatsApp!
+            </a>
+        </section>
+
+
+        <!-- LOCALIZAÇÃO: substituir ENDERECO_AQUI pelo endereço real -->
+        <section class="localizacao">
+            <h2>Onde estamos?</h2>
+            <p>Confira nossa localização.</p>
+
+            <iframe
+                src="https://www.google.com/maps?q=ENDERECO_AQUI&output=embed"
+                title="Localização da BURGER ZY no Google Maps"
+                loading="lazy">
+            </iframe>
+        </section>
+
+    </main>
+
+
+    <!-- RODAPÉ COM INFORMAÇÕES DE CONTATO -->
+    <footer class="rodape">
+        <img src="imagens/logo.png" alt="BURGER ZY">
+
+        <div class="informacoes">
+            <p>Endereço: ENDEREÇO COMPLETO</p>
+            <p>Telefone: (DD) 00000-0000</p>
+        </div>
+
+        <p class="direitos">© 2026 - Todos os direitos reservados.</p>
+    </footer>
+
+
+    <!-- JANELA SIMPLES PARA MOSTRAR O NOME E A DESCRIÇÃO DO PRODUTO -->
+    <dialog id="janela-produto">
+        <button type="button" id="fechar" aria-label="Fechar janela">X</button>
+        <img id="imagem-ampliada" src="" alt="">
+        <h2 id="nome-ampliado"></h2>
+        <p id="descricao-ampliada"></p>
+    </dialog>
+
+
+    <!-- JAVASCRIPT: ABRIR E FECHAR A JANELA DOS PRODUTOS -->
+    <script>
+
+        // Seleciona os produtos e os elementos da janela
+        const produtos = document.querySelectorAll(".produto");
+        const janela = document.getElementById("janela-produto");
+        const imagemAmpliada = document.getElementById("imagem-ampliada");
+        const nomeAmpliado = document.getElementById("nome-ampliado");
+        const descricaoAmpliada = document.getElementById("descricao-ampliada");
+        const botaoFechar = document.getElementById("fechar");
+
+        // Quando um produto for clicado, mostra seu nome e sua descrição
+        produtos.forEach(function(produto) {
+            produto.addEventListener("click", function() {
+                imagemAmpliada.src = produto.querySelector("img").src;
+                imagemAmpliada.alt = produto.dataset.nome;
+                nomeAmpliado.textContent = produto.dataset.nome;
+                descricaoAmpliada.textContent = produto.dataset.descricao;
+                janela.showModal();
+            });
+        });
+
+        // Fecha a janela ao clicar no botão
+        botaoFechar.addEventListener("click", function() {
+            janela.close();
+        });
+
+        // Fecha a janela ao clicar na área escura ao redor
+        janela.addEventListener("click", function(evento) {
+            if (evento.target === janela) {
+                janela.close();
+            }
+        });
+
+    </script>
+
+</body>
+</html>
