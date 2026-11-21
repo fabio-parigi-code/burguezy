@@ -135,12 +135,23 @@ h1, h2 {
     color: #111111;
     text-decoration: none;
     font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
+
 
 .botao-whatsapp:hover {
     background-color: #E5AD00;
 }
 
+.botao-whatsapp img {
+    width: 22px;
+    height: 22px;
+    display: block;
+    transform: translateY(-1px); /*para alinhar a logo do whatsapp com a base do texto*/
+}
 
 /* LOCALIZAÇÃO */
 .localizacao {
@@ -159,7 +170,9 @@ h1, h2 {
 }
 
 
+
 /* RODAPÉ */
+
 .rodape {
     display: flex;
     justify-content: space-around;
@@ -170,7 +183,6 @@ h1, h2 {
     background-color: #111111;
     color: #FFFFFF;
     border-top: 4px solid #FFC928;
-    text-align: center;
 }
 
 .rodape img {
@@ -179,9 +191,56 @@ h1, h2 {
     object-fit: cover;
 }
 
-.direitos {
-    font-size: 13px;
+.informacoes p {
+    margin: 5px 0;
 }
+
+/* ÍCONES DAS REDES SOCIAIS */
+
+.redes-sociais {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.redes-sociais a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    border: 1px solid #FFC928;
+    border-radius: 50%;
+    color: #FFC928;
+    text-decoration: none;
+}
+
+.redes-sociais svg {
+    width: 22px;
+    height: 22px;
+}
+
+.redes-sociais a:hover {
+    background-color: #FFC928;
+    color: #111111;
+}
+
+/* ÍCONE DO ANOTAI */
+
+.icone-anotai {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* DIREITOS AUTORAIS */
+
+.direitos {
+    width: 100%;
+    text-align: center;
+    font-size: 13px;
+    color: #CCCCCC;
+}
+
 
 
 /* JANELA DE INFORMAÇÕES DO PRODUTO */
