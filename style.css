@@ -196,35 +196,32 @@ h1, h2 {
 }
 
 /* ÍCONES DAS REDES SOCIAIS */
-
 .redes-sociais {
     display: flex;
+    justify-content: center;
     align-items: center;
     gap: 15px;
 }
 
 .redes-sociais a {
-    display: flex;
-    align-items: center;
+    display: inline-flex;
     justify-content: center;
+    align-items: center;
     width: 42px;
     height: 42px;
-    border: 1px solid #FFC928;
-    border-radius: 50%;
     color: #FFC928;
-    text-decoration: none;
-}
-
-.redes-sociais svg {
-    width: 22px;
-    height: 22px;
+    transition: transform 0.2s ease;
 }
 
 .redes-sociais a:hover {
-    background-color: #FFC928;
-    color: #111111;
+    transform: scale(1.1);
 }
 
+.redes-sociais img {
+    display: block;
+    width: 26px;
+    height: 26px;
+}
 /* ÍCONE DO ANOTAI */
 
 .icone-anotai {
