@@ -3,9 +3,9 @@
 
 <head>
     <!-- Configurações básicas da página -->
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"> <!-- Definição da codificiação para permitir caraceteres especiais -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="apple-touch-icon" sizes="180x180" href="imagens/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="imagens/apple-touch-icon.png"> <!-- Configuração do Favicon-->
     <link rel="icon" type="image/png" sizes="32x32" href="imagens/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="imagens/favicon-16x16.png">
     <title>BURGER ZY | Hamburgueria Delivery</title>
@@ -18,12 +18,12 @@
 
     <!-- CABEÇALHO COM A LOGOMARCA -->
     <header class="cabecalho">
-        <img src="imagens/logo.png" alt="BURGER ZY - Hamburgueria Delivery">
+        <img src="imagens/logo.png" alt="BURGER ZY - Hamburgueria Delivery"> <!-- Logomarca principal no topo da página -->
     </header>
 
 
     <!-- BANNER PRINCIPAL: IMAGEM ESTÁTICA -->
-    <section class="banner">
+    <section class="banner"> <!-- Section será uma alternativa que utilizaremos aos DIVs, para poder agrupar vários Divs Dentro deles sem gerar muita confusão -->
         <img src="imagens/banner-burger-zy.png"
              alt="BURGER ZY - Sabor artesanal em cada mordida">
     </section>
@@ -37,13 +37,14 @@
             <h1>Nosso Cardápio</h1>
             <p>Conheça algumas das nossas opções.</p>
 
-            <div class="galeria">
+            <div class="galeria"> <!-- Arranjo de oito itens expansíveis via JavaScript -->
 
                 <!-- Produto 1 -->
-                <button class="produto" type="button" data-nome="Hamburguer Salada Zy"
+                <button class="produto" type="button" data-nome="Hamburguer Salada Zy" 
                         data-descricao="Composto por um suculento hamburguer de carne (150g), exclusivo molho Zy, fatia de cheddar, pão brioche macio, alface, tomate e cebola roxa.">
+                    <!-- Botão a ser acionado via click, o JS diferencia cada produto através dos seletores personalizados "data-nome" e "data-descricao" -->
                     <img src="imagens/produto-01.webp" alt="Fotografia do Hamburguer Salada Zy">
-                    <span class="nome-produto">Hamburguer Salada Zy</span>
+                    <span class="nome-produto">Hamburguer Salada Zy</span> <!-- "Legenda" de cada imagem -->
                 </button>
 
                 <!-- Produto 2 -->
@@ -60,7 +61,7 @@
                     <span class="nome-produto">Hamburguer Pig Zy (Bacon)</span>
                 </button>
 
-                <!-- Produto 4 -->
+                <!-- Produto 4 --> <!-- ESTE PRODUTO FOI DESCONTINUADO, SUBSTITUIR PELO ..... (a ser definido pelo cliente) -->
                 <button class="produto" type="button" data-nome="Hamburguer Rennet Zy (Queijo Coalho)"
                         data-descricao="Um hambúguer suculento (150g), pão brioche, queijo coalho, mostarda com mel e o bacon.">
                     <img src="imagens/produto-04.webp" alt="Fotografia do Hamburguer Rennet Zy">
@@ -100,7 +101,7 @@
 
 
         <!-- APRESENTAÇÃO DA HAMBURGUERIA -->
-        <section class="sobre">
+        <section class="sobre"> 
             <h2>Conheça a BURGER ZY</h2>
             <p>
                 A BURGER ZY é uma hamburgueria delivery.
@@ -122,17 +123,15 @@
             
         <!-- BOTÃO DE CHAMADA PARA O WHATSAPP -->
             <a href="https://wa.me/55017991306433" class="botao-whatsapp"
-            target="_blank" rel="noopener noreferrer">
+            target="_blank" rel="noopener noreferrer"> <!-- "no opener" e "no referrer" ajudam o link a ser aberto sem interagir com rastreadores-->
 
-                <img src="imagens/whatsapp.svg" alt="">
+                <img src="imagens/whatsapp.svg" alt=""> <!-- imagem pequena da logo do whatsapp, personalizada para as cores do site-->
 
                 Fale conosco no WhatsApp
             </a>
         </section>
 
-        
-
-
+    
         <!-- LOCALIZAÇÃO -->
         <section class="localizacao">
             <h2>Onde estamos?</h2>
@@ -142,7 +141,7 @@
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3729.754426121362!2d-49.410479099999996!3d-20.801220599999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94bdad860fb9bb7d%3A0x867e4e3cf855e10c!2sBurguer%20zy!5e0!3m2!1spt-BR!2sbr!4v1795290308741!5m2!1spt-BR!2sbr"
                 title="Localização da BURGER ZY no Google Maps"
                 loading="lazy">
-            </iframe>
+            </iframe> <!-- adiconado o frame de navegação do google maps, com as informações do estabelecimento referenciadas-->
         </section>
 
     </main>
@@ -158,45 +157,35 @@
     <!-- ENDEREÇO E TELEFONE -->
     <div class="informacoes">
         <p>Endereço: R. Santa Paula, 5061 - Parque R L tebar, São José do Rio Preto - SP, 15040-367</p>
-        <p>Telefone: (017) 99130 - 6433</p>
+        <p>Telefone: (017) 99130 - 6433</p> <!-- informações fixadas no rodapé-->
     </div>
 
     <!-- ÍCONES DAS REDES SOCIAIS E ANOTAI -->
     <div class="redes-sociais">
 
         <!-- INSTAGRAM -->
-        <a href="https://www.instagram.com/burguer.zy/"
-           target="_blank"
-           rel="noopener noreferrer"
-           aria-label="Instagram da BURGER ZY">
+		<a href="https://www.instagram.com/burguer.zy/"
+		   target="_blank"
+		   rel="noopener noreferrer"
+		   aria-label="Instagram da BURGER ZY">
 
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-                <rect x="3" y="3" width="18" height="18"
-                      rx="5" fill="none" stroke="currentColor"
-                      stroke-width="2"/>
-                <circle cx="12" cy="12" r="4"
-                        fill="none" stroke="currentColor"
-                        stroke-width="2"/>
-                <circle cx="18" cy="6" r="1.2" fill="currentColor"/>
-            </svg>
+			<img src="imagens/redes-sociais/instagram.svg"
+				 alt=""
+				 aria-hidden="true">
 
-        </a>
+		</a>
 
         <!-- FACEBOOK -->
-        <a href="https://www.facebook.com/p/Burguer-ZY-61578374560466/"
-           target="_blank"
-           rel="noopener noreferrer"
-           aria-label="Facebook da BURGER ZY">
+		<a href="https://www.facebook.com/p/Burguer-ZY-61578374560466/"
+		   target="_blank"
+		   rel="noopener noreferrer"
+		   aria-label="Facebook da BURGER ZY">
 
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-                <path fill="currentColor"
-                      d="M13.5 21v-8h2.7l.4-3h-3.1V8.1
-                      c0-.9.3-1.5 1.6-1.5h1.6V3.9
-                      c-.8-.1-1.7-.2-2.5-.2
-                      -2.5 0-4.2 1.5-4.2 4.3V10H7.5v3H10v8z"/>
-            </svg>
+			<img src="imagens/redes-sociais/facebook.svg"
+				 alt=""
+				 aria-hidden="true">
 
-        </a>
+		</a>
 
         <!-- ANOTAI -->
         <a href="https://pedido.anota.ai/loja/burgz-1?f=msa"
